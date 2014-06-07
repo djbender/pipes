@@ -37,7 +37,7 @@ totally up to you.
 ### Routes
 
 To begin with, in pipes you create a set of routes. Routes are defined as a
-plain old ruby hash which for convention's sake we put in routes.rb. Keys are
+plain old ruby hash which for convention's sake are put in routes.rb. Keys are
 strings and for now they take on this format `[GET] /make_something`
 
 The format is the http verb in brackets followed by a space and the url after that.
@@ -76,8 +76,8 @@ are being used to connect other pipelines together.
 
 In short, pipelines look like this input -> data transformation -> output.
 
-A pipeline must return some form of output. For now we are using hashes, but in
-the future, we might adopt a different data structure.
+A pipeline must return some form of output. For now it is using hashes, but in
+the future, pipes might adopt a different data structure.
 
 
 ### Presenters
@@ -98,8 +98,8 @@ that makes sense for your program or your database or whatever.
 
 Your database data structures and your view data structures don't need to match at all.
 
-Like pipelines, a presenter must return some form of output. For now we are
-using hashes, but in the future, we might adopt a different data structure.
+Like pipelines, a presenter must return some form of output. For now it is 
+using hashes, but in the future, pipes might adopt a different data structure.
 
 
 ### Views
@@ -133,7 +133,7 @@ and a database. Both pipes and your favorite MVC framework are soliving the same
 basic problem... turning some form of user input into some kind of output... usually 
 a string of HTML. 
 
-We see the concepts of data processing and transformation to be a better fit
+I see the concepts of data processing and transformation to be a better fit
 for the web than the approach of data modeling as the central abstraction to solve
 web app problems with. 
 

@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 
 def wrap_sinatra with_action: nil, and_route: nil, and_params: nil
   action, route, params = with_action, and_route, and_params

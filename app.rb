@@ -16,4 +16,6 @@ require_relative 'routes'
 
 # right now this program runs as a sinatra web app defined in lib/sinatra_pipes.rb 
 
+require 'sinatra' #this has to be there or sinatra won't run
 require_relative 'lib/sinatra_pipes'
+

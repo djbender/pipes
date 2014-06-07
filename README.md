@@ -3,6 +3,8 @@ pipes
 
 a data processing approach to building the web
 
+"The internet is not just something you dump something on. It's not a big
+truck. It's a series of tubes." - Senator Ted Stevens 
 
 ## Introduction
 

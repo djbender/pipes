@@ -11,7 +11,7 @@ contains, and  to some extent what database structure it uses. Due to time
 contraints and other constraints, projects often skimp on code quality and all
 practices that might lead to code quality.
 
-What if code was easier to reason about? What if TDD was easy or even trivial? 
+What if code was easier to reason about? What if testing were easy?
 
 pipes aims to flip the script and say that looking at the world through the
 lens of data structures is wrong, and instead we need to look at the ideas of

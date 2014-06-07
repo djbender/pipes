@@ -121,11 +121,11 @@ call any other part of your program inside of a view. If you need some data in
 a view that you don't have, you forgot to add it in either the presenter or the
 data pipeline.
 
-DO NOT MAKE ANY SORT OF DATA PROCESSING CALLS IN THE VIEW!!!
+DO NOT MAKE ANY SORT OF DATA RETRIEVAL/PROCESSING CALLS IN THE VIEW OR PRESENTER!!!
 
 ## Frequently Asked Questions
 
-** Why isn't this MVC? **
+**Why isn't this MVC?**
 
 Well, not to get on my high horse, but MVC as it is often implemented is a tightly
 coupled structure, and it is very often coupled to both the notion of a web request
@@ -137,7 +137,7 @@ We see the concepts of data processing and transformation to be a better fit
 for the web than the approach of data modeling as the central abstraction to solve
 web app problems with. 
 
-** Is pipes functional or object oriented? **
+**Is pipes functional or object oriented?**
 
 pipes is probably a bit of both. Most of the code in pipes should feel very
 functional and it borrows heavily from functional concepts. While not
@@ -145,7 +145,7 @@ implemented in pipes yet, I have a strong design prefrence towards
 immutability, plain data structures, and only complecting state and functions 
 together when there is no better way to solve the problem.
 
-** Does pipes have to be built in Ruby? **
+**Does pipes have to be built in Ruby?**
 
 Nope. pipes is built on top of ruby because that is the tool I have closest at hand. 
 
@@ -155,7 +155,7 @@ that I think is a lot different than most frameworks.
 Long term, I don't know if pipes will stay with ruby as ruby is missing some
 features that would mkae pipes a lot easier to build with.
 
-** Does pipes have an ORM? **
+**Does pipes have an ORM?**
 
 No. There are a lot of good reasons why pipes doesn't have an ORM. First, ruby already
 has a few strong choices of ORM if you decide to go that route. Honestly, ORM's
